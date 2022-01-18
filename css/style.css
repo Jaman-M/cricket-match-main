@@ -1,0 +1,55 @@
+@keyframes bounce {
+            0%{
+                bottom:150px;
+                right:0;
+            }
+            45%{
+                bottom:-130px;
+                right:570px;
+            }
+            50%{
+                bottom:50px;
+                right:880px;
+            }
+            100%{
+                bottom:400px;;
+                right:0;
+            }
+        }
+        h2{
+            text-align:center;
+        }
+        
+         .field{
+             position:relative;
+         }
+        .field:hover .bat{
+            transform: rotate(-65deg);
+            transform-origin: top right;
+            transition: transform .2s ease-in 1s;
+
+        }
+        .ball{
+            position:absolute;
+            right:-100px;
+            transition: .5s ease;
+        }
+        .field:hover .ball{
+            animation: bounce 2.3s linear 0s 1 forwards;
+        }
+        .six{
+            background: #fff;
+            width:250px;
+            box-shadow: 0px 0px 25px 10px #efefef;
+            border-radius:5px;
+            transform: scale(0);
+            position: absolute;
+            top:50%;
+            left:44%;
+            
+        }
+        .field:hover .six{
+            transform: scale(1.5);
+
+            transition: transform .2s ease 2.3s;
+        }
